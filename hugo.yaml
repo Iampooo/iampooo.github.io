@@ -28,20 +28,20 @@ languages:
     menu:
       main:
         - name: Posts
-          url: posts/
-          weight: 10
-        - name: Archive
-          url: archives
-          weight: 5
-        - name: Search
-          url: search/
-          weight: 10
-        - name: Tags
-          url: tags/
+          url: /posts
           weight: 10
         - name: Project
-          url: projects/
-          weight: 10
+          url: /projects
+          weight: 20
+        - name: Experience
+          url: /experience
+          weight: 30
+        - name: Search
+          url: search/
+          weight: 40
+        - name: Tags
+          url: /tags
+          weight: 50
 
 outputs:
   home:
@@ -70,24 +70,25 @@ params:
   # comments: false
   images: ["images/papermod-cover.png"]
 
+  # Home page
 
   profileMode:
-      enabled: false
-      title: PaperMod
-      imageUrl: "#"
-      imageTitle: my image
+      enabled: true
+      title: Daniel Han (iampoo)
+      imageUrl: "home/iampoo1.png"
+      imageTitle: iampoo
       # imageWidth: 120
       # imageHeight: 120
       buttons:
-        - name: Archives
-          url: archives
-        - name: Tags
+        - name: Posts
+          url: posts/
+        - name: Resume
           url: tags
 
   homeInfoParams:
     homeInfoParams:
-    Title: "Welcom to entangled"
-    Content: >
+    Title: "Iampoo"
+    Content:
       Hi, iampoo. I'm documenting my learning note in this blog. Topics including quantum computing, ML/DL, CUDA programming, and more.
 
 
@@ -101,3 +102,18 @@ params:
     - name: linkedin
       title: linkedin
       url: "https://linkedin.com/in/danielhan0829"
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+    
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
