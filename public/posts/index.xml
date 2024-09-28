@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on iampoo</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on iampoo</description>
+    <image>
+      <title>iampoo</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.135.0</generator>
+    <language>en</language>
+    <copyright>iampoo</copyright>
+    <lastBuildDate>Sat, 28 Sep 2024 21:03:58 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deep Learning Intro</title>
+      <link>http://localhost:1313/posts/deep_learning_intro/</link>
+      <pubDate>Sat, 28 Sep 2024 21:03:58 +0800</pubDate>
+      <guid>http://localhost:1313/posts/deep_learning_intro/</guid>
+      <description>&lt;h1 id=&#34;臭家睿&#34;&gt;臭家睿&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;肥豬&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;u&lt;/li&gt;
+&lt;li&gt;v&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+  </channel>
+</rss>
