@@ -74,16 +74,16 @@ params:
 
   profileMode:
       enabled: true
-      title: Daniel Han (iampoo)
-      imageUrl: "home/iampoo1.png"
-      imageTitle: iampoo
+      title: Daniel Han
+      imageUrl: "home/iampoo.png"
+      imageTitle: Daniel Han
       # imageWidth: 120
       # imageHeight: 120
       buttons:
         - name: Posts
           url: posts/
         - name: Resume
-          url: tags
+          url: "https://drive.google.com/file/d/1d5gnt8uN-x4LQ1cNnj7QvyTTYwiqnANR/view?usp=drive_link"
 
   homeInfoParams:
     homeInfoParams:
@@ -111,7 +111,10 @@ params:
     threshold: 0.4
     minMatchCharLength: 0
     keys: ["title", "permalink", "summary", "content"]
-    
+
+  assets:
+    favicon: "favicon.ico"
+
 outputs:
   home:
     - HTML
