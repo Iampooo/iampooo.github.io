@@ -12,7 +12,18 @@
     <generator>Hugo -- 0.140.1</generator>
     <language>en</language>
     <copyright>iampoo</copyright>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Thu, 06 Feb 2025 10:48:51 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Multiple Concept Personalization</title>
+      <link>http://localhost:1313/posts/multiple-concept-personalization/</link>
+      <pubDate>Thu, 06 Feb 2025 10:48:51 +0800</pubDate>
+      <guid>http://localhost:1313/posts/multiple-concept-personalization/</guid>
+      <description>&lt;h1 id=&#34;multiple-concept-personalization&#34;&gt;Multiple Concept Personalization&lt;/h1&gt;
+&lt;p&gt;Diffusion Model 在產生一般圖片時已經很強了，但想要用 Diffusion models 來客製化自己多個想要的照片或圖片是一個目前還沒解決的問題，譬如說我想要產生我家狗狗跟貓貓去日本泡溫泉的照片，。&lt;/p&gt;
+&lt;h2 id=&#34;current-challenges&#34;&gt;Current Challenges&lt;/h2&gt;
+&lt;h3 id=&#34;concept-bleeding-and-interference&#34;&gt;Concept Bleeding and Interference&lt;/h3&gt;
+&lt;p&gt;One of the primary challenges in multi-concept generation is &amp;ldquo;&lt;strong&gt;concept bleeding&lt;/strong&gt;&amp;rdquo; where different concepts unintentionally merge or interfere with each other, leading to inaccurate representations in generated images. This issue arises due to the overlapping or merging of various concepts during the synthesis process.像是這個 [[Multi-Concept Customization of Text-to-Image Diffusion|Custom Diffusion]] 的例子，狗狗貓貓融合了變成狗貓狗貓，原因應該是在於兩個 latent feature 很接近的時候，兩者的邊界會變得模糊，diffusion model幾乎分辨不出來兩者的差別，所以產出來的圖片就像是混合種。&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
