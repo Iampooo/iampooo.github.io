@@ -54,7 +54,7 @@ params:
   description: "iampoo - entangled"
   author: iampoo
 
-  defaultTheme: auto
+  defaultTheme: light
   # disableThemeToggle: true
   ShowShareButtons: true
   ShowReadingTime: true
@@ -75,7 +75,7 @@ params:
   profileMode:
       enabled: true
       title: Daniel Han
-      imageUrl: "home/iampoo.png"
+      imageUrl: "home/Iampoo.jpg"
       imageTitle: Daniel Han
       # imageWidth: 120
       # imageHeight: 120
@@ -89,7 +89,7 @@ params:
     homeInfoParams:
     Title: "Iampoo"
     Content:
-      Hi, iampoo. I'm documenting my learning note in this blog. Topics including quantum computing, ML/DL, CUDA programming, and more.
+      Hi, I am Daniel Han. I'm documenting my learning note in this blog. Topics including quantum computing, ML/DL, CUDA programming, and more.
 
 
   socialIcons:
