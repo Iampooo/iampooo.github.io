@@ -43,7 +43,7 @@ languages:
           url: /tags
           weight: 50
         - name: Archive
-          url: /archive
+          url: /archives
           weight: 60
 
 outputs:
