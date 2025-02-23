@@ -40,6 +40,20 @@
 <meta name="twitter:title" content="Deep Learning"/>
 <meta name="twitter:description" content="iampoo - entangled"/>
 
+    
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)'], ['$', '$']]                  
+    },
+    loader:{
+      load: ['ui/safe']
+    },
+  };
+</script>
+    
 </head>
 
 <body class="list" id="top">
@@ -104,7 +118,7 @@
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/archive" title="Archive">
+                <a href="http://localhost:1313/archives" title="Archive">
                     <span>Archive</span>
                 </a>
             </li>
@@ -132,7 +146,7 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>Multiple Concept Personalization Diffusion Model 在產生一般圖片時已經很強了，但想要用 Diffusion models 來客製化自己多個想要的照片或圖片是一個目前還沒解決的問題，譬如說我想要產生我家狗狗跟貓貓去日本泡溫泉的照片，。
+    <p>Multiple Concept Personalization Diffusion Model 在產生一般圖片時已經很強了，但想要用 Diffusion models 來客製化自己多個想要的照片或圖片是一個目前還沒解決的問題，譬如說我想要產生我家狗狗跟貓貓去日本泡溫泉的照片，。[^1]
 Current Challenges Concept Bleeding and Interference One of the primary challenges in multi-concept generation is “concept bleeding” where different concepts unintentionally merge or interfere with each other, leading to inaccurate representations in generated images. This issue arises due to the overlapping or merging of various concepts during the synthesis process.像是這個 [[Multi-Concept Customization of Text-to-Image Diffusion|Custom Diffusion]] 的例子，狗狗貓貓融合了變成狗貓狗貓，原因應該是在於兩個 latent feature 很接近的時候，兩者的邊界會變得模糊，diffusion model幾乎分辨不出來兩者的差別，所以產出來的圖片就像是混合種。
 ...</p>
   </div>

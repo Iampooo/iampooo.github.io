@@ -9,21 +9,55 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.143.1</generator>
+    <generator>Hugo -- 0.144.1</generator>
     <language>en</language>
     <copyright>iampoo</copyright>
-    <lastBuildDate>Thu, 06 Feb 2025 10:48:51 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 23 Feb 2025 14:07:24 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Qc #0] Quantum Cheatsheet</title>
+      <link>http://localhost:1313/posts/qc0/</link>
+      <pubDate>Sun, 23 Feb 2025 14:07:24 +0800</pubDate>
+      <guid>http://localhost:1313/posts/qc0/</guid>
+      <description>Quantum Computation常用的notation和定義</description>
+    </item>
+    <item>
+      <title>紀錄一下 #1</title>
+      <link>http://localhost:1313/posts/weekly-1/</link>
+      <pubDate>Sat, 22 Feb 2025 22:19:59 +0800</pubDate>
+      <guid>http://localhost:1313/posts/weekly-1/</guid>
+      <description>每周紀錄一些學習和想法</description>
+    </item>
+    <item>
+      <title>[QC] #1 Qubit, Linear Algebra, Quantum States</title>
+      <link>http://localhost:1313/posts/qc1/</link>
+      <pubDate>Tue, 18 Feb 2025 21:02:35 +0800</pubDate>
+      <guid>http://localhost:1313/posts/qc1/</guid>
+      <description>&lt;p&gt;量子計算聽起來很厲害，但為甚麼？他比一般的電腦強在哪？&lt;/p&gt;
+&lt;p&gt;傳統電腦的基本運算單元是一個位元 (bit)，一個位元不是 0 ，就是 1。好多個位元組合起來，就可以做各種運算。&lt;/p&gt;
+&lt;p&gt;量子計算的基本運算單元是 &lt;strong&gt;Quantum bit (Qubit)&lt;/strong&gt;，它可以同時是0和1，只是出現的機率可能不一樣，可以想成一個正在被拋起的硬幣，落下來之前 (觀測前) 不知道是正面還是背面。這個特性稱作 &lt;strong&gt;superposition&lt;/strong&gt;，可以利用它來做傳統電腦做不到的事。&lt;/p&gt;
+$$|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$$&lt;p&gt;
+&amp;ldquo;$| \ \rangle$&amp;rdquo; 是量子計算常用的符號 (Dirac Notation)，$\alpha\ \beta$ 代表有 $|\alpha|^{2}$ 的機率可以量到 0 ，$|\beta|^{2}$ 量到1&lt;/p&gt;
+$$|0\rangle = \begin{bmatrix} 1 \\ 0 \end{bmatrix} \ |1\rangle = \begin{bmatrix} 0 \\ 1 \end{bmatrix} \quad |\psi\rangle = \alpha|0\rangle + \beta|1\rangle = \alpha \begin{bmatrix} 1 \\ 0 \end{bmatrix} + \beta \begin{bmatrix} 0 \\ 1 \end{bmatrix} = \begin{bmatrix} \alpha \\ \beta \end{bmatrix}$$&lt;h2 id=&#34;linear-algebra&#34;&gt;Linear Algebra&lt;/h2&gt;
+&lt;p&gt;補充線性代數的基本性質和notation，之後會用到&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Multiple Concept Personalization</title>
       <link>http://localhost:1313/posts/multiple-concept-personalization/</link>
       <pubDate>Thu, 06 Feb 2025 10:48:51 +0800</pubDate>
       <guid>http://localhost:1313/posts/multiple-concept-personalization/</guid>
       <description>&lt;h1 id=&#34;multiple-concept-personalization&#34;&gt;Multiple Concept Personalization&lt;/h1&gt;
-&lt;p&gt;Diffusion Model 在產生一般圖片時已經很強了，但想要用 Diffusion models 來客製化自己多個想要的照片或圖片是一個目前還沒解決的問題，譬如說我想要產生我家狗狗跟貓貓去日本泡溫泉的照片，。&lt;/p&gt;
+&lt;p&gt;Diffusion Model 在產生一般圖片時已經很強了，但想要用 Diffusion models 來客製化自己多個想要的照片或圖片是一個目前還沒解決的問題，譬如說我想要產生我家狗狗跟貓貓去日本泡溫泉的照片，。[^1]&lt;/p&gt;
 &lt;h2 id=&#34;current-challenges&#34;&gt;Current Challenges&lt;/h2&gt;
 &lt;h3 id=&#34;concept-bleeding-and-interference&#34;&gt;Concept Bleeding and Interference&lt;/h3&gt;
 &lt;p&gt;One of the primary challenges in multi-concept generation is &amp;ldquo;&lt;strong&gt;concept bleeding&lt;/strong&gt;&amp;rdquo; where different concepts unintentionally merge or interfere with each other, leading to inaccurate representations in generated images. This issue arises due to the overlapping or merging of various concepts during the synthesis process.像是這個 [[Multi-Concept Customization of Text-to-Image Diffusion|Custom Diffusion]] 的例子，狗狗貓貓融合了變成狗貓狗貓，原因應該是在於兩個 latent feature 很接近的時候，兩者的邊界會變得模糊，diffusion model幾乎分辨不出來兩者的差別，所以產出來的圖片就像是混合種。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Deep Learning Intro</title>
+      <link>http://localhost:1313/posts/deep_learning_intro/</link>
+      <pubDate>Sat, 28 Sep 2024 21:03:58 +0800</pubDate>
+      <guid>http://localhost:1313/posts/deep_learning_intro/</guid>
+      <description>zzz</description>
     </item>
   </channel>
 </rss>

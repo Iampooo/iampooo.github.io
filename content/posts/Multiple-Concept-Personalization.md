@@ -8,7 +8,7 @@ cover:
 ---
 # Multiple Concept Personalization
 
-Diffusion Model 在產生一般圖片時已經很強了，但想要用 Diffusion models 來客製化自己多個想要的照片或圖片是一個目前還沒解決的問題，譬如說我想要產生我家狗狗跟貓貓去日本泡溫泉的照片，。
+Diffusion Model 在產生一般圖片時已經很強了，但想要用 Diffusion models 來客製化自己多個想要的照片或圖片是一個目前還沒解決的問題，譬如說我想要產生我家狗狗跟貓貓去日本泡溫泉的照片，。[^1]
 ## Current Challenges
 
 ### Concept Bleeding and Interference
@@ -51,4 +51,3 @@ The field of multi-concept generation in diffusion models is rapidly evolving, w
 
 - - -
 ## Reference
--

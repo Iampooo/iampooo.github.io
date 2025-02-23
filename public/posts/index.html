@@ -55,6 +55,20 @@
   ]
 }
 </script>
+    
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)'], ['$', '$']]                  
+    },
+    loader:{
+      load: ['ui/safe']
+    },
+  };
+</script>
+    
 </head>
 
 <body class="list" id="top">
@@ -119,7 +133,7 @@
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/archive" title="Archive">
+                <a href="http://localhost:1313/archives" title="Archive">
                     <span>Archive</span>
                 </a>
             </li>
@@ -143,16 +157,87 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">[Qc #0] Quantum Cheatsheet
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Linear Algebra Name Notation Meaning Ket $\| \psi\rangle$ 行向量 (直) Bra $\langle\psi\|$ 列向量 (橫) Inner Product $\langle\phi \| \psi \rangle$ 內積 → 純量 Outer Product $\|\psi\rangle \langle \phi\|$ 外積 → 矩陣 Complex Conjugate $c^*=(1&#43;i)^*=1-i$ 共軛 Transpose $H^T$ = $\begin{bmatrix} a &amp; b \\ c &amp; d\end{bmatrix}^{T} = \begin{bmatrix} a &amp; c \\ b &amp; d\end{bmatrix}$ 轉置 Hermitian Conjugate $H^\dagger=(H^{*})^{T} = H$ 共軛轉置 ($\dagger$ 叫 dagger) Normal $HH^\dagger=H^{\dagger}H$ 可對角化的條件 Unitary $H^\dagger H = I$ 保持向量長度不變 Real $\langle\phi \|A \|\psi \rangle$ is real, non negative 代表可測量的量 Positive $\langle\phi \|A \|\psi \rangle \ge 0$ 描述機率或能量 Projector $P=\sum\limits_{i=1}^{k}\|i\rangle \langle i\| \quad P^2=P$ 選擇性保留部分空間，類似濾鏡 Tensor Product $\|a\rangle \otimes \|b\rangle = \|a, b\rangle \quad A = \begin{bmatrix} a &amp; b \\ c &amp; d \end{bmatrix} \ A\otimes B = \begin{bmatrix} aB &amp; bB \\ cB &amp; dB \end{bmatrix}$ 把兩個系統合併 Trace $\text{Tr}(A) = \sum_i A_{ii}$ 矩陣對角線總和，像是「總能量」或「總概率」。 Rotation $\exp(i\theta \vec v \cdot \vec \sigma)=\cos \theta I &#43; i \sin \vec v \cdot \vec \sigma$ Diagonalizable $A = SDS^{-1}$ where $D$ is diagonal 對角化，可以拆成獨立部分處理 Eigenvalue &amp; Eigenvector $A\|\psi\rangle = \lambda\|\psi\rangle$ 找出不變方向，像是電梯只升降不傾斜 Spectral Decomposition $A = \sum_i \lambda_i \|\psi_i\rangle\langle\psi_i\|$ 把矩陣分解成特徵值和對應方向的總和 Polar Decomposition $U = RP$ where $R$ is unitary, $P$ is positive 矩陣拆成旋轉 &#43; 變形 SVD $A = UDV^\dagger$ 矩陣分解成「基本變形」 Basic Quantum Name Notation Meaning Density Matrix $\rho = \sum_i p_i \|\psi_i\rangle\langle\psi_i\|, \quad \text{Tr}(\rho) = 1$ Statistical mixture of quantum states POVM Set $\{E_i\}$ where $E_i \geq 0, \sum_i E_i = I$ Positive Operator-Valued Measure Fidelity $F(\rho,\sigma) = \text{Tr}\sqrt{\sqrt{\rho}\sigma\sqrt{\rho}}$ Similarity between quantum states Partial Trace $\text{Tr}_B(\|\alpha\rangle\langle\beta\| \otimes \|\gamma\rangle\langle\delta\|) = \|\alpha\rangle\langle\beta\| \cdot \langle\delta\|\gamma\rangle$ Reduced density operator Pauli Matrices $\sigma_x = \begin{bmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{bmatrix}, \sigma_y = \begin{bmatrix} 0 &amp; -i \\ i &amp; 0 \end{bmatrix}, \sigma_z = \begin{bmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end{bmatrix}$ Single-qubit basis operators CNOT Gate $\text{CNOT} = \begin{bmatrix} 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; 1 &amp; 0 \end{bmatrix}$ Controlled-NOT operation Hadamard Gate $H = \frac{1}{\sqrt{2}}\begin{bmatrix} 1 &amp; 1 \\ 1 &amp; -1 \end{bmatrix}$ Creates superposition von Neumann Entropy $S(\rho) = -\text{Tr}(\rho\log\rho) = -\sum_i \lambda_i \log \lambda_i$ Quantum information measure Schmidt Decomposition $\|\psi\rangle_{AB} = \sum_i \sqrt{\lambda_i} \|\phi_i\rangle_A \otimes \|\varphi_i\rangle_B$ Bipartite state decomposition Commutator $[A,B] = AB - BA$ Measures non-commutativity Expectation Value $\langle A \rangle_\psi = \langle\psi\|A\|\psi\rangle$ Average measurement outcome Bell States $\|\Phi^&#43;\rangle = \frac{1}{\sqrt{2}}(\|00\rangle &#43;\|11\rangle)$ Maximally entangled states Closed vs Open Quantum Systems Comparison Property Closed Quantum System Open Quantum System State Description Pure states: |ψ⟩ Mixed states: density matrix ρ State Evolution Unitary evolution: |ψ(t)⟩ = U(t)|ψ(0)⟩ CPTP maps (completely positive trace-preserving): ρ(t) = Φ(ρ(0)) Evolution Equation Schrödinger equation: iℏ∂|ψ⟩/∂t = H|ψ⟩ Lindblad master equation: dρ/dt = -i[H,ρ] &#43; ∑ᵢ γᵢ(LᵢρLᵢ† - ½{Lᵢ†Lᵢ,ρ}) Information Flow Information is conserved Information can leak to environment Measurements Projective measurements: Pₖ = |k⟩⟨k| General POVMs: Set {Eₖ} where Eₖ ≥ 0, ∑ₖEₖ = I Measurement Outcome p(k) = |⟨k|ψ⟩|² p(k) = Tr(Eₖρ) Measurement for |0⟩ p(0) = |⟨0|ψ⟩|² p(0) = Tr(|0⟩⟨0|ρ) Post-measurement State |ψ⟩ → |k⟩ (collapse) ρ → EₖρEₖ†/Tr(Eₖρ) (more general) Reversibility Reversible dynamics Generally irreversible Entropy Behavior Constant von Neumann entropy Entropy can increase (decoherence) Purity Maintained: Tr(ρ²) = 1 Generally decreases: Tr(ρ²) ≤ 1 Mathematical Framework Hilbert space Liouville space (operators on Hilbert space) Common Examples Idealized quantum computer, isolated atoms Real quantum devices, NMR systems, optical cavities Superposition Maintains coherence Loses coherence over time Entanglement Maintained between system parts Can be lost to environment (decoherence) Time Evolution Operator U(t) = e^(-iHt/ℏ) Φₜ(ρ) = e^(Lt)(ρ) where L is Lindbladian Quantum Channels Identity channel Depolarizing, amplitude damping, phase damping channels Complete Description Wavefunction contains all information Need environmental degrees of freedom for complete description Computational Model Circuit model (ideal) Noise models required for accurate simulation </p>
+  </div>
+  <footer class="entry-footer"><span title='2025-02-23 14:07:24 +0800 CST'>February 23, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;iampoo</footer>
+  <a class="entry-link" aria-label="post link to [Qc #0] Quantum Cheatsheet" href="http://localhost:1313/posts/qc0/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">紀錄一下 #1
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>紀錄一下 #1 Quandela 減少10000倍光量子計算的零件用量
+問題是: 光子在傳輸時會有很高的損耗，為了達到高容錯 (fault-tolerance) 的計算，單用光子會需要很大量的零件。 怎麼做的: Quandela，一間歐洲量子計算公司，在這篇論文中提出混合的方法，利用半導體量子發射器 (semiconductor quantum emitters，可高效率發射光子) 同時作為光子來源和 qubit 本身，用12個零件就可以完成一個 logical qubit 所以呢: 大大增加了可擴展性和能源效率。 很漂亮的 ML 介紹 &amp; 很漂亮的 transformer 介紹
+視覺化: 即使是已經熟悉的內容，看到這些視覺化的介紹還是會有耳目一新的感覺 深度剖析LLM的背後原理 by Andrej Kaparthy
+預訓練: 用一大堆資料堆出來的是 base model ，只會文字接龍還很容易幻覺 解決: 專家糾錯並提供&#34;不會就說不會&#34;的訓練資料，或是&#34;不會就google&#34; 短期 &amp; 長期記憶: context window (對話框 ) &amp; parameters 左到右的線性思考: Model needs token to think，回答落落長其實是在幫助他思考 模型只看的到token: 擅長 copy paste，不擅長數數和拼字 現在的研究方向: post-training RL RLHF: 創造好的答案→選出好的答案，但是會鑽漏洞 如何看待LLM: 他們有時候很笨，不要完全相信，但好好利用會大大加速你的生產力 LLM的未來: multimodal, agent, computer-use, computer use, test-time training 如何跟上: Chatbot Arena, AI News, TogetherAI Andrej Kaparthy: 他的影片都好棒 Productivity Rain Dance (生產力的假象)
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-02-22 22:19:59 +0800 CST'>February 22, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;iampoo</footer>
+  <a class="entry-link" aria-label="post link to 紀錄一下 #1" href="http://localhost:1313/posts/weekly-1/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">[QC] #1 Qubit, Linear Algebra, Quantum States
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>量子計算聽起來很厲害，但為甚麼？他比一般的電腦強在哪？
+傳統電腦的基本運算單元是一個位元 (bit)，一個位元不是 0 ，就是 1。好多個位元組合起來，就可以做各種運算。
+量子計算的基本運算單元是 Quantum bit (Qubit)，它可以同時是0和1，只是出現的機率可能不一樣，可以想成一個正在被拋起的硬幣，落下來之前 (觀測前) 不知道是正面還是背面。這個特性稱作 superposition，可以利用它來做傳統電腦做不到的事。
+$$|\psi\rangle = \alpha|0\rangle &#43; \beta|1\rangle$$ “$| \ \rangle$” 是量子計算常用的符號 (Dirac Notation)，$\alpha\ \beta$ 代表有 $|\alpha|^{2}$ 的機率可以量到 0 ，$|\beta|^{2}$ 量到1
+$$|0\rangle = \begin{bmatrix} 1 \\ 0 \end{bmatrix} \ |1\rangle = \begin{bmatrix} 0 \\ 1 \end{bmatrix} \quad |\psi\rangle = \alpha|0\rangle &#43; \beta|1\rangle = \alpha \begin{bmatrix} 1 \\ 0 \end{bmatrix} &#43; \beta \begin{bmatrix} 0 \\ 1 \end{bmatrix} = \begin{bmatrix} \alpha \\ \beta \end{bmatrix}$$Linear Algebra 補充線性代數的基本性質和notation，之後會用到
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-02-18 21:02:35 +0800 CST'>February 18, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;iampoo</footer>
+  <a class="entry-link" aria-label="post link to [QC] #1 Qubit, Linear Algebra, Quantum States" href="http://localhost:1313/posts/qc1/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Multiple Concept Personalization
     </h2>
   </header>
   <div class="entry-content">
-    <p>Multiple Concept Personalization Diffusion Model 在產生一般圖片時已經很強了，但想要用 Diffusion models 來客製化自己多個想要的照片或圖片是一個目前還沒解決的問題，譬如說我想要產生我家狗狗跟貓貓去日本泡溫泉的照片，。
+    <p>Multiple Concept Personalization Diffusion Model 在產生一般圖片時已經很強了，但想要用 Diffusion models 來客製化自己多個想要的照片或圖片是一個目前還沒解決的問題，譬如說我想要產生我家狗狗跟貓貓去日本泡溫泉的照片，。[^1]
 Current Challenges Concept Bleeding and Interference One of the primary challenges in multi-concept generation is “concept bleeding” where different concepts unintentionally merge or interfere with each other, leading to inaccurate representations in generated images. This issue arises due to the overlapping or merging of various concepts during the synthesis process.像是這個 [[Multi-Concept Customization of Text-to-Image Diffusion|Custom Diffusion]] 的例子，狗狗貓貓融合了變成狗貓狗貓，原因應該是在於兩個 latent feature 很接近的時候，兩者的邊界會變得模糊，diffusion model幾乎分辨不出來兩者的差別，所以產出來的圖片就像是混合種。
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2025-02-06 10:48:51 +0800 CST'>February 6, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;iampoo</footer>
   <a class="entry-link" aria-label="post link to Multiple Concept Personalization" href="http://localhost:1313/posts/multiple-concept-personalization/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Deep Learning Intro
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>臭家睿 肥豬
+u v1 腳筆記 齁齁好庫 ↩︎
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-09-28 21:03:58 +0800 CST'>September 28, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;iampoo</footer>
+  <a class="entry-link" aria-label="post link to Deep Learning Intro" href="http://localhost:1313/posts/deep_learning_intro/"></a>
 </article>
     </main>
     

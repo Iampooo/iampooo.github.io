@@ -52,6 +52,23 @@ outputs:
     - RSS
     - JSON
 
+markup:
+  goldmark:
+    extensions:
+      passthrough:
+        delimiters:
+          block:
+          - - \[
+            - \]
+          - - $$
+            - $$
+          inline:
+          - - \(
+            - \)
+          - - "$"
+            - "$"
+        enable: true
+
 params:
   env: production
   description: "iampoo - entangled"
@@ -73,6 +90,7 @@ params:
   social: true
   # comments: false
   images: ["images/papermod-cover.png"]
+  math: true
 
   # Home page
 
@@ -119,8 +137,3 @@ params:
   assets:
     favicon: "favicon.ico"
 
-outputs:
-  home:
-    - HTML
-    - RSS
-    - JSON
