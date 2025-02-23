@@ -6,7 +6,6 @@ draft: false
 tags: ["",]
 cover:
 ---
-# 紀錄一下 #1
 
 **[Quandela 減少10000倍光量子計算的零件用量](https://www.quandela.com/about-us/newsroom/quandela-announces-a-100000-reduction-in-the-number-of-components-needed-for-fault-tolerant-calculations-a-major-breakthrough-for-photonic-quantum-computing/)**
 - **問題是:** 光子在傳輸時會有很高的損耗，為了達到高容錯 (fault-tolerance) 的計算，單用光子會需要很大量的零件。
@@ -40,6 +39,7 @@ cover:
 - **人類呢**: 人類專注於無法用生產力衡量的事情：藝術、創新、探索、社交、陪伴等。
 
 **開源 or 閉源**
+
 關於 frontier model 開源和閉源的討論，我覺得技術本身才是重點。擁有最領先技術的不想公開，落後的就 open source 來激發創新速度，直到技術趕上成為領先者時，他們再改成閉源的模型，換原本領先的開源。
 
 > 起司越大，洞越多；洞越多，起司越小；起司越大，起司越小。

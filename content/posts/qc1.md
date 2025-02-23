@@ -2,7 +2,7 @@
 title: '[QC] #1 Qubit, Linear Algebra, Quantum States'
 description:
 date: 2025-02-18T21:02:35+08:00
-draft: true
+draft: false
 tags: ["",]
 cover:
 ---
