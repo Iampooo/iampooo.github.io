@@ -5,6 +5,7 @@ date: 2025-02-23T14:07:24+08:00
 draft: false
 tags: ["quantum", "cheatsheet"]
 cover:
+math: true
 ---
 ## Linear Algebra
 | Name                     | Notation                                                                                                                                                               | Meaning                   |
