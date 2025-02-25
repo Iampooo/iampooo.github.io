@@ -2,7 +2,7 @@
 title: '[Qc #0] Quantum Cheatsheet'
 description: Quantum Computation常用的notation和定義
 date: 2025-02-23T14:07:24+08:00
-draft: true
+draft: false
 tags: ["quantum", "cheatsheet"]
 cover:
 math: true
@@ -50,20 +50,3 @@ math: true
 | --------------------------- | ------------------------------------------ | ---------------------------------------------------------------------- |
 | **State Description**       | Pure states: \|ψ⟩                          | Mixed states: density matrix ρ                                         |
 | **State Evolution**         | Unitary evolution: \|ψ(t)⟩ = U(t)\|ψ(0)⟩   | CPTP maps (completely positive trace-preserving): ρ(t) = Φ(ρ(0))       |
-| **Evolution Equation**      | Schrödinger equation: iℏ∂\|ψ⟩/∂t = H\|ψ⟩   | Lindblad master equation: dρ/dt = -i[H,ρ] + ∑ᵢ γᵢ(LᵢρLᵢ† - ½{Lᵢ†Lᵢ,ρ}) |
-| **Information Flow**        | Information is conserved                   | Information can leak to environment                                    |
-| **Measurements**            | Projective measurements: Pₖ = \|k⟩⟨k\|     | General POVMs: Set {Eₖ} where Eₖ ≥ 0, ∑ₖEₖ = I                         |
-| **Measurement Outcome**     | p(k) = \|⟨k\|ψ⟩\|²                         | p(k) = Tr(Eₖρ)                                                         |
-| **Measurement for \|0⟩**    | p(0) = \|⟨0\|ψ⟩\|²                         | p(0) = Tr(\|0⟩⟨0\|ρ)                                                   |
-| **Post-measurement State**  | \|ψ⟩ → \|k⟩ (collapse)                     | ρ → EₖρEₖ†/Tr(Eₖρ) (more general)                                      |
-| **Reversibility**           | Reversible dynamics                        | Generally irreversible                                                 |
-| **Entropy Behavior**        | Constant von Neumann entropy               | Entropy can increase (decoherence)                                     |
-| **Purity**                  | Maintained: Tr(ρ²) = 1                     | Generally decreases: Tr(ρ²) ≤ 1                                        |
-| **Mathematical Framework**  | Hilbert space                              | Liouville space (operators on Hilbert space)                           |
-| **Common Examples**         | Idealized quantum computer, isolated atoms | Real quantum devices, NMR systems, optical cavities                    |
-| **Superposition**           | Maintains coherence                        | Loses coherence over time                                              |
-| **Entanglement**            | Maintained between system parts            | Can be lost to environment (decoherence)                               |
-| **Time Evolution Operator** | U(t) = e^(-iHt/ℏ)                          | Φₜ(ρ) = e^(Lt)(ρ) where L is Lindbladian                               |
-| **Quantum Channels**        | Identity channel                           | Depolarizing, amplitude damping, phase damping channels                |
-| **Complete Description**    | Wavefunction contains all information      | Need environmental degrees of freedom for complete description         |
-| **Computational Model**     | Circuit model (ideal)                      | Noise models required for accurate simulation                          |
