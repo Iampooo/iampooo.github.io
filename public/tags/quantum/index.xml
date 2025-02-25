@@ -21,5 +21,20 @@
       <guid>http://localhost:1313/posts/qc0/</guid>
       <description>Quantum Computation常用的notation和定義</description>
     </item>
+    <item>
+      <title>[QC] #1 Qubit, Linear Algebra, Quantum States</title>
+      <link>http://localhost:1313/posts/qc1/</link>
+      <pubDate>Tue, 18 Feb 2025 21:02:35 +0800</pubDate>
+      <guid>http://localhost:1313/posts/qc1/</guid>
+      <description>&lt;h2 id=&#34;量子計算聽起來很厲害但為甚麼他比一般的電腦強在哪&#34;&gt;量子計算聽起來很厲害，但為甚麼？他比一般的電腦強在哪？&lt;/h2&gt;
+&lt;p&gt;傳統電腦的基本運算單元是&lt;strong&gt;位元（bit）&lt;/strong&gt;，一個位元不是 0 就是 1。透過許多位元的組合，電腦可以執行各種運算，例如邏輯運算或數學計算。然而，當問題變得非常複雜時——比如破解密碼、模擬化學分子或是處理大規模數據——傳統電腦可能需要花費數年甚至數十年的時間，因為它一次只能處理一個狀態。
+![bit vs qubit](static/image/Pasted image 20250218205100.png)
+相較之下，量子計算的基本運算單元是 &lt;strong&gt;量子位元（Quantum bit, Qubit）&lt;/strong&gt;。Qubit 的特別之處在於，它可以同時處於 0 和 1 的狀態，這種特性稱為 &lt;strong&gt;疊加（superposition）&lt;/strong&gt;。你可以把 Qubit 想像成一枚正在被拋起的硬幣，在落下（被觀測）之前，它既不是正面也不是背面，而是同時包含這兩種可能性的狀態。這種疊加態讓量子計算機能一次探索多個解，對於某些問題（例如尋找最佳路徑或模擬量子系統），它的效率遠超傳統電腦。&lt;/p&gt;
+&lt;h2 id=&#34;怎麼描述-qubit-的狀態&#34;&gt;怎麼描述 Qubit 的狀態？&lt;/h2&gt;
+$$|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$$&lt;p&gt;
+這裡 $|\psi\rangle$ 是 Qubit 的量子態，$|0\rangle$ 和 $|1\rangle$ 分別代表 0 和 1 的基礎狀態，而 $\alpha$ 和 $\beta$ 是&lt;strong&gt;複數（complex numbers）&lt;/strong&gt;，稱為機率幅度（probability amplitude）。當我們測量 Qubit 時，有 $|\alpha|^2$ 的機率得到 0，有 $|\beta|^2$ 的機率得到 1。因為機率總和必須是 1，所以： $|\alpha|^2+|\beta|^2=1$&lt;/p&gt;
+$$|0\rangle = \begin{bmatrix} 1 \\ 0 \end{bmatrix} \ |1\rangle = \begin{bmatrix} 0 \\ 1 \end{bmatrix} \quad |\psi\rangle = \alpha|0\rangle + \beta|1\rangle = \alpha \begin{bmatrix} 1 \\ 0 \end{bmatrix} + \beta \begin{bmatrix} 0 \\ 1 \end{bmatrix} = \begin{bmatrix} \alpha \\ \beta \end{bmatrix}$$&lt;p&gt;
+這種用向量描述量子態的方式，就是量子力學的 &lt;em&gt;&lt;strong&gt;第一個公設（Quantum Postulate 1）&lt;/strong&gt;&lt;/em&gt;，它告訴我們量子系統的狀態可以用數學上的向量空間來表示。這也解釋了為什麼量子計算需要用到大量的線性代數！&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

@@ -2,7 +2,7 @@
 title: '[Qc #0] Quantum Cheatsheet'
 description: Quantum Computation常用的notation和定義
 date: 2025-02-23T14:07:24+08:00
-draft: false
+draft: true
 tags: ["quantum", "cheatsheet"]
 cover:
 math: true

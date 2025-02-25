@@ -2,7 +2,7 @@
 title: 'Deep Learning Intro'
 description: zzz
 date: 2024-09-28T21:03:58+08:00
-draft: false
+draft: true
 tags: ["tag",]
 cover:
 ---
